@@ -1,0 +1,61 @@
+/*----------- Header --------- */
+
+header{
+    /* background-color: rgb(255, 255, 255); */
+    height: 5rem;
+}
+
+.titlebar{
+    /* 5rem -> 2.5rem */
+    height: 50%;
+    /* outline: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.title-img{
+    /* 2.6rem -> 60% */
+    height: 60%;
+    margin-left: 1rem;
+}
+.title{
+    font-size: 1rem;
+}
+
+.menu-bar{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    height: 50%;
+    align-items: center;
+    /* outline: 2px solid green; */
+}
+.menu{
+    position: relative;
+
+}
+.menu-items{
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 30px;
+    width: 9rem;
+}
+li{
+    padding: 0.25rem;
+}
+
+/*---------- main ----------*/
+
+main{
+    height: calc(100vh - 8rem);
+    background-color: black;
+}
+
+
+
+/*---------- Footer ----------*/
+footer{
+    height: 3rem;
+    /* background-color: grey; */
+}
