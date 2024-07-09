@@ -70,8 +70,13 @@ li:hover{
 main{
     height: calc(100vh - 8rem);
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
-
+.video{
+    height: 100%;
+}
 
 
 /*---------- Footer ----------*/
