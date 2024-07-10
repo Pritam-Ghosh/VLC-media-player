@@ -51,12 +51,13 @@ header{
 
 .menu:hover .menu-items{
     display: block;
+    cursor: default;
     
 }
 
-/* .menu-btn:hover + .menu-items{
-    display: block;
-}  */
+.menu-btn{
+    cursor:default;
+} 
 li{
     padding: 0.25rem;
 }
@@ -84,3 +85,4 @@ footer{
     height: 3rem;
     /* background-color: grey; */
 }
+
