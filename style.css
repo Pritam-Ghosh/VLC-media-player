@@ -79,7 +79,14 @@ main{
     height: 100%;
 }
 
-
+.toast{
+    display: none;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 5.5rem;
+    right: 1.5rem;
+}
 /*---------- Footer ----------*/
 footer{
     height: 3rem;
