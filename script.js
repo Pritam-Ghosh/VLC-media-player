@@ -5,6 +5,7 @@ const VolumeDown = document.querySelector('#VolumeDown');
 const videoBtn = document.querySelector('#videoBtn');
 const videoInput = document.querySelector('#videoInput');
 const videoPlayer = document.querySelector('#main');
+const toast = document.querySelector('.toast');
 
 
 
@@ -41,7 +42,13 @@ const SpeedUpHandler = () => {
     }
     const increaseSpeed = videoElem.playbackRate + 0.5;
     videoElem.playbackRate = increaseSpeed;
-    console.log(increaseSpeed)
+    // console.log(increaseSpeed);
+    // toast.textContent = increaseSpeed + "X";
+    // toast.style.display = 'block'
+    // setTimeout(() => {
+    //     toast.style.display = 'none'
+    // },3000)
+    showToast(increaseSpeed + 'X')
 }
 const SpeedDownHandler = () => {
     const videoElem = document.querySelector('video');
@@ -51,8 +58,14 @@ const SpeedDownHandler = () => {
         if(videoElem.playbackRate > 0){
             const decreaseSpeed = videoElem.playbackRate - 0.5;
             videoElem.playbackRate = decreaseSpeed;
-            console.log(decreaseSpeed)
-            }           
+            // console.log(decreaseSpeed)
+            // toast.textContent = decreaseSpeed+ "X";
+            // toast.style.display = 'block'
+            // setTimeout(() => {
+            //     toast.style.display = 'none'
+            // },3000)
+            showToast(decreaseSpeed + 'X')
+           }           
 }
 
 // ------inc/dec the volume--------
@@ -64,8 +77,12 @@ const  VolumeUpHandler = () => {
         if (videoElem.volume > 0.99) {
             return;
             }
-        videoElem.volume=videoElem.volume + 0.1;
-        console.log(videoElem.volume);
+        const increaseVolume =videoElem.volume + 0.1;
+        // console.log(videoElem.volume);
+        videoElem.volume = increaseVolume;
+        const percentage = (increaseVolume*100) + '%'; 
+        showToast(percentage);
+        
 }
 const  VolumeDownHandler = () =>{
     const videoElem = document.querySelector('video');
@@ -73,10 +90,23 @@ const  VolumeDownHandler = () =>{
         return;
         }
         if (videoElem.volume <= 0.1) {
-            return videoElem.volume = 0;
+             videoElem.volume = 0;
+             return;
             }
-            videoElem.volume=videoElem.volume - 0.1;
-            console.log(videoElem.volume);
+            const decreaseVolume =videoElem.volume - 0.1;
+            // console.log(videoElem.volume);
+
+        videoElem.volume = decreaseVolume;
+        const percentage = (decreaseVolume*100) + '%'; 
+        showToast(percentage);
+}
+
+ showToast = (message) =>{
+    toast.textContent = message;
+    toast.style.display= 'block'
+    setTimeout(() => {
+        toast.style.display = 'none'
+    },3000)
 }
 
 //browser call function
