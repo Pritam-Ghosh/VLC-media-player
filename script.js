@@ -6,13 +6,12 @@ const videoBtn = document.querySelector('#videoBtn');
 const videoInput = document.querySelector('#videoInput');
 const videoPlayer = document.querySelector('#main');
 const toast = document.querySelector('.toast');
-
-
-
+const fullscreen = document.querySelector('#fullscreen');
+const play = document.querySelector('#play');
+const pause = document.querySelector('#pause');
 
 const HandleInput = () =>{
-    videoInput.click();
-    
+    videoInput.click(); 
 }
 
 const acceptInputHandler = (obj) => {
@@ -109,6 +108,33 @@ const  VolumeDownHandler = () =>{
     },3000)
 }
 
+const fullscreenHandler = () =>{
+    console.log('hello')
+    videoPlayer.requestFullscreen();
+}
+
+const playBtn = () =>{
+    const videoElem = document.querySelector('video');
+    if (videoElem.paused) {
+        videoElem.play();
+        } else {
+            videoElem.pause();
+            }            
+            play.style.display = 'none';
+            pause.style.display = 'inline-block';
+}
+
+const pauseBtn = () => {
+    const videoElem = document.querySelector('video');
+    if (videoElem.paused) {
+        videoElem.play();
+        } else {
+            videoElem.pause();
+            }
+            play.style.display = 'inline-block';
+            pause.style.display = 'none';
+            pause.style.position = "relative"
+}
 //browser call function
 videoBtn.addEventListener('click',HandleInput);
 videoInput.addEventListener('change',acceptInputHandler);
@@ -116,3 +142,6 @@ SpeedUp.addEventListener('click',SpeedUpHandler);
 SpeedDown.addEventListener('click',SpeedDownHandler);
 VolumeUp.addEventListener('click',VolumeUpHandler);
 VolumeDown.addEventListener('click',VolumeDownHandler);
+fullscreen.addEventListener('click',fullscreenHandler);
+play.addEventListener('click',playBtn);
+pause.addEventListener('click', pauseBtn);

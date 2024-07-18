@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="titlebar">
-            <img src="VLC-3-0-icon.png" alt="" class="title-img"> 
+            <img src="VLC-3-0-icon.png" alt="" class="title-img">
             <h1 class="title">VLC Media Player</h1>
         </div>
         <div class="menu-bar">
             <div class="menu">
                 <div class="menu-btn" id="videoBtn">Open</div>
                 <!-- button click -> file get -->
-                 <input type="file" class="videoInput" id="videoInput">
+                <input type="file" class="videoInput" id="videoInput">
             </div>
             <div class="menu">
                 <div class="menu-btn">Playback</div>
@@ -36,8 +38,26 @@
         </div>
     </header>
     <main id="main"></main>
-    <div class="toast">100%</div>
-    <footer></footer>
+    <div class="toast"></div>
+    <footer>
+        <div class="timeControler">
+            <div class="current-time"> 00.00.00</div>
+            <input type="range" id="seekBar" value="0" step="0.01" class="seek-bar">
+            <div class="total-time"> 00.00.00</div>
+        </div>
+        <div class="footer-menu-btn">
+            <div class="playPause">
+                <i class="fa-solid fa-play" class="controlBtn" id="play"></i>
+                <i class="fa-solid fa-pause" class="controlBtn" id="pause"></i>
+            </div>
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-stop"></i>
+            <i class="fa-solid fa-forward"></i>
+            <i class="fa-solid fa-expand" class="controlBtn" id="fullscreen"></i>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ac015ecc5b.js" crossorigin="anonymous"></script>
+
 </html>

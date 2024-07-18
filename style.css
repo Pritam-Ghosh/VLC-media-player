@@ -93,3 +93,23 @@ footer{
     /* background-color: grey; */
 }
 
+.timeControler{
+    display: flex;
+    /* letter-spacing: 10px; */
+    margin: 12px 12px 0px 12px;
+}
+.footer-menu-btn{
+    display: flex;
+    gap: 10px;
+    margin: 12px;
+}
+.seekBar{
+    display: flex;
+}
+.seek-bar{
+    width:90%;
+}
+#pause{
+    display: none;
+}
+
