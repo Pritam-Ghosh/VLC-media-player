@@ -96,20 +96,34 @@ footer{
 .timeControler{
     display: flex;
     /* letter-spacing: 10px; */
+ justify-content: space-between;
     margin: 12px 12px 0px 12px;
+   
 }
 .footer-menu-btn{
     display: flex;
     gap: 10px;
     margin: 12px;
 }
-.seekBar{
-    display: flex;
+.time-slider{
+    width: 88%;
 }
 .seek-bar{
-    width:90%;
+    width:100%;
+}
+#play{
+    margin: auto;
+    padding: 7px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(195, 195, 195);
+    border-radius: 2px;
 }
 #pause{
     display: none;
+    margin: auto;
+    padding: 7px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(195, 195, 195);
+    border-radius: 2px;
 }
 
