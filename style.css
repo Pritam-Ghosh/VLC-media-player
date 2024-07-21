@@ -69,7 +69,7 @@ li:hover{
 /*---------- main ----------*/
 
 main{
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 10rem);
     background-color: black;
     display: flex;
     justify-content: center;
@@ -112,18 +112,40 @@ footer{
     width:100%;
 }
 #play{
-    margin: auto;
-    padding: 7px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(195, 195, 195);
-    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(221, 218, 218);
+    border: 1px solid rgb(126, 124, 124);
+    height: 20px;
+    width: 20px;
+    text-align: center;
 }
 #pause{
+  text-align: center;
     display: none;
     margin: auto;
-    padding: 7px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(221, 218, 218);
+    border: 1px solid rgb(126, 124, 124);
     border-radius: 2px;
+    height: 20px;
+    width: 20px;
+    
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(221, 218, 218);
+    border: 1px solid rgb(126, 124, 124);
+    height: 20px;
+    width: 20px;
+}
+
+.btn:hover {
+    border: 1px solid rgb(7, 93, 133);
+    background-color: rgb(221, 244, 250);
+}
