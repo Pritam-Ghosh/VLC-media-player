@@ -1,66 +1,82 @@
-Video Player
-Description
+# Custom Video Player
+
 This is a custom video player built using HTML, CSS, and JavaScript. It provides a range of features including play/pause functionality, volume control, playback speed adjustment, and seek controls. Users can upload videos, control playback, and view the video in fullscreen mode.
 
-Features
-Play/Pause: Toggle video playback.
-Volume Control: Adjust the volume with increment and decrement buttons.
-Playback Speed Control: Increase or decrease the playback speed.
-Seek Controls: Fast forward or rewind the video by 5 seconds.
-Fullscreen Mode: Enter or exit fullscreen view.
-Video Upload: Load and play video files from your local device.
-Installation
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/yourusername/videoplayer.git
-Navigate to the project directory:
+- **Play/Pause:** Toggle video playback.
+- **Volume Control:** Adjust the volume with increment and decrement buttons.
+- **Playback Speed Control:** Increase or decrease the playback speed.
+- **Seek Controls:** Fast forward or rewind the video by 5 seconds.
+- **Fullscreen Mode:** Enter or exit fullscreen view.
+- **Video Upload:** Load and play video files from your local device.
 
-bash
-Copy code
-cd videoplayer
-Open index.html in a web browser:
+## Installation
 
-bash
-Copy code
-open index.html
-Usage
-Upload a Video:
+1. Clone the repository:
 
-Click the video upload button to select and load a video file from your device.
-Play/Pause Video:
+    ```bash
+    git clone https://github.com/yourusername/videoplayer.git
+    ```
 
-Use the play and pause buttons to control video playback.
-Adjust Volume:
+2. Navigate to the project directory:
 
-Click the volume up or volume down buttons to change the audio volume.
-Change Playback Speed:
+    ```bash
+    cd videoplayer
+    ```
 
-Click the speed up or speed down buttons to adjust the playback speed.
-Seek Video:
+3. Open `index.html` in a web browser:
 
-Click the forward or backward buttons to skip forward or backward by 5 seconds.
-Toggle Fullscreen:
+    ```bash
+    open index.html
+    ```
 
-Click the fullscreen button to enter or exit fullscreen mode.
-Stop Video:
+## Usage
 
-Click the stop button to stop the video playback and remove the video from the player.
-Code Structure
-index.html: The main HTML file that structures the video player and controls.
-styles.css: Contains the CSS styles for the video player and controls.
-scripts.js: The JavaScript file handling video playback, controls, and functionality.
-Contributing
+- **Upload a Video:** Click the video upload button to select and load a video file from your device.
+- **Play/Pause Video:** Use the play and pause buttons to control video playback.
+- **Adjust Volume:** Click the volume up or volume down buttons to change the audio volume.
+- **Change Playback Speed:** Click the speed up or speed down buttons to adjust the playback speed.
+- **Seek Video:** Click the forward or backward buttons to skip forward or backward by 5 seconds.
+- **Toggle Fullscreen:** Click the fullscreen button to enter or exit fullscreen mode.
+- **Stop Video:** Click the stop button to stop the video playback and remove the video from the player.
+
+## Code Structure
+
+- `index.html`: The main HTML file that structures the video player and controls.
+- `styles.css`: Contains the CSS styles for the video player and controls.
+- `scripts.js`: The JavaScript file handling video playback, controls, and functionality.
+
+## Contributing
+
 If you would like to contribute to this project:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/YourFeature).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/YourFeature).
-Open a Pull Request.
+1. Fork the repository.
+2. Create a new branch:
 
+    ```bash
+    git checkout -b feature/YourFeature
+    ```
 
-Acknowledgements
-Font Awesome for the icons used in the project.
+3. Make your changes.
+4. Commit your changes:
+
+    ```bash
+    git commit -am 'Add new feature'
+    ```
+
+5. Push to the branch:
+
+    ```bash
+    git push origin feature/YourFeature
+    ```
+
+6. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+
+- [Font Awesome](https://fontawesome.com) for the icons used in the project.
