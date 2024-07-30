@@ -1,151 +1,151 @@
-/*----------- Header --------- */
+    /*----------- Header --------- */
 
-header{
-    /* background-color: rgb(255, 255, 255); */
-    height: 5rem;
-}
+    header{
+        /* background-color: rgb(255, 255, 255); */
+        height: 5rem;
+    }
 
-.titlebar{
-    /* 5rem -> 2.5rem */
-    height: 50%;
-    /* outline: 2px solid blue; */
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-}
+    .titlebar{
+        /* 5rem -> 2.5rem */
+        height: 50%;
+        /* outline: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
 
-.title-img{
-    /* 2.6rem -> 60% */
-    height: 60%;
-    margin-left: 1rem;
-}
-.title{
-    font-size: 1rem;
-}
+    .title-img{
+        /* 2.6rem -> 60% */
+        height: 60%;
+        margin-left: 1rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
 
-.menu-bar{
-    display: flex;
-    gap: 1rem;
-    margin-left: 1rem;
-    height: 50%;
-    align-items: center;
-    /* outline: 2px solid green; */
-}
-.menu{
-    position: relative;
-}
+        .menu-bar{
+            display: flex;
+            gap: 1rem;
+            margin-left: 1rem;
+            height: 50%;
+            align-items: center;
+            /* outline: 2px solid green; */
+        }
+        .menu{
+            position: relative;
+        }
 
-.videoInput{
-    display: none;
-}
-.menu:hover{
-    background-color: lightblue;
-}
-.menu-items{
-    background-color: rgb(238, 238, 238);
-    position: absolute;
-    top: 18px;
-    width: 9rem;
-    display: none;
-}
+    .videoInput{
+        display: none;
+    }
+    .menu:hover{
+        background-color: lightblue;
+    }
+    .menu-items{
+        background-color: rgb(238, 238, 238);
+        position: absolute;
+        top: 18px;
+        width: 9rem;
+        display: none;
+    }
 
-.menu:hover .menu-items{
-    display: block;
-    cursor: default;
+    .menu:hover .menu-items{
+        display: block;
+        cursor: default;
+        
+    }
+
+    .menu-btn{
+        cursor:default;
+    } 
+    li{
+        padding: 0.25rem;
+    }
+
+    li:hover{
+        background-color: rgb(210, 210, 210);
+    }
+
+    /*---------- main ----------*/
+
+    main{
+        height: calc(100vh - 10rem);
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .video{
+        height: 100%;
+    }
+
+    .toast{
+        display: none;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 5.5rem;
+        right: 1.5rem;
+    }
+    /*---------- Footer ----------*/
+    footer{
+        height: 3rem;
+        /* background-color: grey; */
+    }
+
+    .timeControler{
+        display: flex;
+        /* letter-spacing: 10px; */
+    justify-content: space-between;
+        margin: 12px 12px 0px 12px;
     
-}
-
-.menu-btn{
-    cursor:default;
-} 
-li{
-    padding: 0.25rem;
-}
-
-li:hover{
-    background-color: rgb(210, 210, 210);
-}
-
-/*---------- main ----------*/
-
-main{
-    height: calc(100vh - 10rem);
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-.video{
-    height: 100%;
-}
-
-.toast{
-    display: none;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 5.5rem;
-    right: 1.5rem;
-}
-/*---------- Footer ----------*/
-footer{
-    height: 3rem;
-    /* background-color: grey; */
-}
-
-.timeControler{
-    display: flex;
-    /* letter-spacing: 10px; */
- justify-content: space-between;
-    margin: 12px 12px 0px 12px;
-   
-}
-.footer-menu-btn{
-    display: flex;
-    gap: 10px;
-    margin: 12px;
-}
-.time-slider{
-    width: 88%;
-}
-.seek-bar{
-    width:100%;
-}
-#play{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: rgb(221, 218, 218);
-    border: 1px solid rgb(126, 124, 124);
-    height: 20px;
-    width: 20px;
+    }
+    .footer-menu-btn{
+        display: flex;
+        gap: 10px;
+        margin: 12px;
+    }
+    .time-slider{
+        width: 88%;
+    }
+    .seek-bar{
+        width:100%;
+    }
+    #play{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: rgb(221, 218, 218);
+        border: 1px solid rgb(126, 124, 124);
+        height: 20px;
+        width: 20px;
+        text-align: center;
+    }
+    #pause{
     text-align: center;
-}
-#pause{
-  text-align: center;
-    display: none;
-    margin: auto;
-    background-color: rgb(221, 218, 218);
-    border: 1px solid rgb(126, 124, 124);
-    border-radius: 2px;
-    height: 20px;
-    width: 20px;
-    
-}
+        display: none;
+        margin: auto;
+        background-color: rgb(221, 218, 218);
+        border: 1px solid rgb(126, 124, 124);
+        border-radius: 2px;
+        height: 20px;
+        width: 20px;
+        
+    }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: rgb(221, 218, 218);
-    border: 1px solid rgb(126, 124, 124);
-    height: 20px;
-    width: 20px;
-}
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: rgb(221, 218, 218);
+        border: 1px solid rgb(126, 124, 124);
+        height: 20px;
+        width: 20px;
+    }
 
-.btn:hover {
-    border: 1px solid rgb(7, 93, 133);
-    background-color: rgb(221, 244, 250);
-}
+    .btn:hover {
+        border: 1px solid rgb(7, 93, 133);
+        background-color: rgb(221, 244, 250);
+    }
