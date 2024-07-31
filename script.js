@@ -240,3 +240,27 @@ seekBar.addEventListener('input', () => {
         videoElem.currentTime = (seekValue / 100) * videoElem.duration;
     }
 });
+
+
+// Keyboard support
+const body = document.querySelector('body');
+body.addEventListener('keyup', function (e) {
+    const videoElem = document.querySelector('video');
+    if (!videoElem) return;
+
+    if (e.key === ' ') {
+        playBtn();
+    } else if (e.key === 'ArrowUp') {
+        VolumeUpHandler();
+    } else if (e.key === 'ArrowDown') {
+        VolumeDownHandler();
+    } else if (e.key === '+') {
+        SpeedUpHandler();
+    } else if (e.key === '-') {
+        SpeedDownHandler();
+    } else if (e.key === 'ArrowRight') {
+        forward();
+    } else if (e.key === 'ArrowLeft') {
+        backward();
+    }
+});
